@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get a Random Quote</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Get a Random Quote</h1>
+      <!-- Container for Quote with Image -->
+      <div class="quote-container" id="quote-container">
+        <img
+          src="https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg"
+          alt="Quote Background Image"
+          id="quote-img"
+        />
+        <div class="content" id="content"></div>
+      </div>
+      <!-- Buttons -->
+      <button class="button" type="button" id="getNewQuoteBtn">
+        Get New Quote
+      </button>
+      <button class="button" type="button" id="copyClipboardBtn">
+        Copy to Clipboard
+      </button>
+      <button class="button" type="button" id="shareTwitterBtn">
+        Share to Twitter
+      </button>
+      <a href="#" class="button" id="exportImageBtn">Export as Image</a>
+    </div>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

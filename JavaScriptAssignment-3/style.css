@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #7091e6;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.container {
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  width: 50%;
+}
+
+.quote-container {
+  width: 100%;
+  position: relative;
+}
+
+.quote-container img {
+  width: 90%;
+  height: 300px;
+  border-radius: 20px;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0.4;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+}
+
+.quote-container .content {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  margin-bottom: 5px;
+  z-index: 10;
+}
+
+#quote {
+  font-size: 16px;
+}
+#author {
+  text-align: right;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.button {
+  color: #fff;
+  background-color: #3d52a0;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2c3b73;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+/* for smaller screens */
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 20px;
+  }
+
+  .quote-container img {
+    height: 200px;
+  }
+
+  #quote {
+    font-size: 14px;
+  }
+}
