@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h2>Books Library</h2>
+      <!-- Search Fields -->
+      <input
+        type="text"
+        name="searchBooks"
+        id="searchBooks"
+        placeholder="Search for Books with Title or Author Name"
+      />
+      <div class="functions" style="color: #fff">
+        <div class="sortBy">
+          <button type="button" id="sortByTitle" class="inactive">
+            Sort by Title
+          </button>
+          <button type="button" id="sortByDate" class="inactive">
+            Sort by Date
+          </button>
+        </div>
+        <div class="switch-btn">
+          <button type="button" id="gridViewBtn" class="">Grid View</button>
+          <button type="button" id="listViewBtn" class="inactive">
+            List View
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Books Container -->
+    <div class="grid-view" id="viewType">
+      <div class="container" id="container"></div>
+    </div>
+    <!-- Message while loading Books -->
+    <p id="loading">Loading Books...</p>
+    <div class="pagination">
+      <button type="button" id="prevPage" onclick="pageCall(page-1)">
+        Previous
+      </button>
+      <div class="pages" id="pages"></div>
+      <button type="button" id="nextPage" onclick="pageCall(page+1)">
+        Next
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
